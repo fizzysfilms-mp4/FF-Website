@@ -10,10 +10,6 @@
 }
 
 
-
-
-
-
 html {
  /* 1vw means 1% of the screen width. As the screen shrinks, the base font shrinks. */
  font-size: 1vw;
@@ -26,8 +22,6 @@ padding: 0;
 width:100%;
 height:100%;
 }
-
-
 
 
 header {
@@ -43,6 +37,8 @@ header {
 body {
  font-size: 1.6rem;
  background-color: white;
+ background-image:url(images/texture6.jpg);
+ background-size: 100%;
  
  }
 @keyframes bg-animation {
@@ -91,7 +87,6 @@ h1{
 
 
 
-
 .link a {
  text-decoration: none;
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -106,7 +101,6 @@ h1{
 color: rgb(0, 157, 255);
 font-size: 2.5rem;
 }
-
 
 
 
@@ -130,9 +124,6 @@ font-size: 2.5rem;
    padding: 0;
    margin:auto;
   
-
-
-  
 }
 
 
@@ -144,13 +135,8 @@ font-size: 2.5rem;
    min-width: 0;
    padding: 1rem;
    margin:0;
-  
-  
-
 
 }
-
-
 
 
 .video-container {
@@ -169,7 +155,5 @@ font-size: 2.5rem;
 .video {
  flex:1;
  margin-left: auto;
-
-
  }
 

@@ -1,0 +1,175 @@
+:root {
+ --gradient: linear-gradient(
+   45deg,
+   #104c63,
+   #2ecde6,
+   #57C785,
+   #ADFF5C,
+   #CDFF87,
+ );
+}
+
+
+
+
+
+
+html {
+ /* 1vw means 1% of the screen width. As the screen shrinks, the base font shrinks. */
+ font-size: 1vw;
+}
+
+
+html, body {
+margin:0;
+padding: 0;
+width:100%;
+height:100%;
+}
+
+
+
+
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;            
+ z-index: 4000;
+}
+
+
+body {
+ font-size: 1.6rem;
+ background-color: white;
+ 
+ }
+@keyframes bg-animation {
+ 0% {background-position: left;}
+ 100% {background-position: right;}
+}
+h1{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 3rem;
+}
+
+
+.nav-bar {
+ display: flex;    
+ width:100%;
+ height:auto;
+ margin: auto;
+ align-items: center;
+ justify-content: space-evenly;
+ min-width: none;
+ background-color: black;
+ /*background-image: linear-gradient(90deg, #FFDEBD, #F5CCFF, #D2C7FC,#F5CCFF,#FFDEBD);*/
+ background-size: 400%;
+ animation: bg-animation 20s infinite alternate;
+ padding:.5rem;
+ }
+
+
+.link {
+ flex:1;
+ text-align: center;
+
+
+}
+
+
+.small-logo img {
+ flex:1;
+ align-items: center;
+ width: 15rem;
+ min-width: 0px;
+ height:auto;
+ min-height: auto;
+ margin: auto;
+}
+
+
+
+
+.link a {
+ text-decoration: none;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-weight:lighter;
+ color:white;
+ font-size: 2.5rem;
+ padding: 1rem;
+ }
+
+
+.link a:hover {
+color: rgb(0, 157, 255);
+font-size: 2.5rem;
+}
+
+
+
+
+.banner-container {
+  display: flex;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  flex-wrap: nowrap;
+  color: white;
+  margin-bottom: 3%;
+  margin-top: 2%;
+ 
+ }
+
+
+.banner {
+   flex: 1;
+   text-align: center;
+   flex-shrink: 0;
+   padding: 0;
+   margin:auto;
+  
+
+
+  
+}
+
+
+.logo {
+   flex: 1;
+   align-items: center;
+   flex-shrink: 1;
+   max-width: 100vh;
+   min-width: 0;
+   padding: 1rem;
+   margin:0;
+  
+  
+
+
+}
+
+
+
+
+.video-container {
+ display: flex;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  flex-wrap: nowrap;
+  color: white;
+ 
+  row-gap: 2rem;
+ 
+ }
+
+
+.video {
+ flex:1;
+ margin-left: auto;
+
+
+ }
+

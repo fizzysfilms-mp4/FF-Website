@@ -178,7 +178,7 @@ font-size: 2.5rem;
    flex: 1;
    margin-bottom: 5rem;
    width: 30rem;
-   min-width: 0px;
+   min-width: 0;
    height:auto;
    min-height: auto;
    text-align: center;
@@ -192,13 +192,15 @@ font-size: 2.5rem;
    font-weight: 500;
    color: aliceblue;
    border: 4px solid white;
+   box-sizing: border-box;
    padding: 2rem 10rem;
+
 }
 .book-button a:hover {
    color: aliceblue;
    border: 4px solid white;
    background-color: #104c63;
-   transform: scale(1.05);
+   
 
 }
 

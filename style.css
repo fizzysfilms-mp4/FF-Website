@@ -29,16 +29,18 @@ header {
  width:100%;
  justify-content: space-between;
  align-items: center;
- position: sticky;
+ position: fixed;
  top: 0;            
- z-index: 4000;
- background-color: black;
+ z-index: 1000;
+ padding-bottom: 3rem;
+
 }
 
 
 body {
  font-size: 1.6rem;
  background-image:url(images/texture6.jpg);
+ background-position: bottom;
  background-size: 1500px;
  
  }
@@ -128,7 +130,7 @@ background-color: white
    grid-template-rows: 30rem 45rem 45rem;
    gap:3rem;
    margin: 0;
-   padding:0;
+   padding-top:4rem;
 }
 
 
@@ -291,26 +293,20 @@ background-color: white
 }
 .mobile-nav-bar {
    display:grid;
-   grid-template-columns: 1.5fr 3fr;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: 1fr 1fr;
    justify-content:center;
    align-items: center;
-   padding-bottom: 2rem;
+   padding: 2rem 2rem;
    height:fit-content;
-
+   gap:0;
 }
+
 
 .mobile-logo {
-   grid-area:1/2/2/3;
-}
-.mobile-links {
-   display:grid;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
-   grid-area: 1/1/2/2;
-   gap:7rem;
-   justify-items: center;
-   
-   
-   
+   grid-area:1/2/3/3;
+   width: 40rem;
+   justify-self: center;
 }
 .link-home {
    grid-area: 1/1/2/2;
@@ -318,12 +314,12 @@ background-color: white
 .link-films {
    grid-area: 2/1/3/2;
 }
+
 .link-about-me {
-   grid-area: 3/1/4/2;
+   grid-area: 1/3/2/4;
 }
-.link-contact{
-   grid-area: 4/1/5/2;
-}
+
+
 .link-home a{
    padding: 1rem 7.18rem;
    
@@ -337,7 +333,7 @@ background-color: white
 .link-contact a{
    padding: 1rem 3.85rem;
 }
-.mobile-links a{
+.mobile-nav-bar a{
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    font-size: 5rem;
    text-decoration: none;
@@ -346,15 +342,20 @@ background-color: white
    border: 3px solid white;
 }
 
-.mobile-links a:hover {
+.mobile-nav-bar a:hover {
 color: black;
 font-size: 5rem;
 background-color: white;
+border: 3px solid black;
 
 }
 
 .mobile-logo {
    padding: 1rem;
+}
+
+.grid-container {
+   padding-top:22rem;
 }
 
 }

@@ -24,6 +24,7 @@ height:200%;
 body {
  font-size: 1.6rem;
  background-image:url(images/texture6.jpg);
+ background-attachment: fixed;
  background-position: top;
  background-size: 2000px;
  
@@ -215,37 +216,54 @@ nav a:hover {
 
 
 .grid-container {
-   display:grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 30rem 45rem 45rem;
+   display:flex;
+   flex-direction: column;
    gap:3rem;
    margin: 0;
    padding-top:4rem;
+   justify-content: space-evenly;
 }
 
 
 .item-1 {
+   flex:1;
    display:grid;
    width: 90rem;
    justify-self: center;
-   justify-items: center;
+   justify-content: center;
    grid-template-columns: 1fr;
    grid-template-rows:2fr 1fr;
    padding: 3rem;
-
 }
 
 .intro-text {
    grid-row:1;
-   justify-self: center;
+   margin-left:auto;
+   margin-right:auto;
 }
 .intro-sub {
    grid-row:2;
+   margin-left:auto;
+   margin-right:auto;
 }
    
 
 .item-2 {
-   display:grid;
+   flex:1;
+   display:block;
+   width: 80rem;
+   height:auto;
+   justify-self: center;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
+
+
+.item-3 {
+   display:flex;
+   flex:1;
    grid-template-rows: 2fr 1fr;
    width: 90rem;
    height:60rem;
@@ -254,23 +272,18 @@ nav a:hover {
    background-size: 107rem;
    background-repeat: no-repeat;
    background-position: center;
-
-
 }
-
 .wedding-text h2{
    grid-row: 1;
    padding-left: 3rem;
    padding-top: 10rem;
 }
-
 .book-button{
    grid-row: 2;
    justify-self: center;
    text-decoration: none;
    
 }
-
 .book-button a {
    text-decoration: none;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -287,7 +300,10 @@ nav a:hover {
 
 }
 
-.item-3 {
+
+
+
+.item-4 {
    display:grid;
    grid-template-rows: 2fr 1fr;
    width: 90rem;
@@ -296,6 +312,7 @@ nav a:hover {
    align-items: center;
    justify-items: center;
    padding-top: 15rem;
+   
 }
 
 

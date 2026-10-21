@@ -1,14 +1,8 @@
-:root {
- --gradient: linear-gradient(
-   45deg,
-   #104c63,
-   #2ecde6,
-   #57C785,
-   #ADFF5C,
-   #CDFF87,
- );
-}
 
+* {
+   margin:0;
+   padding:0;
+}
 
 html {
  /* 1vw means 1% of the screen width. As the screen shrinks, the base font shrinks. */
@@ -18,32 +12,20 @@ html {
 button {
 background-color: transparent;
 }
+
 html, body {
 margin:0;
 padding: 0;
 width:100%;
-height:100%;
-}
-
-
-header {
- display: flex;
- width:100%;
- justify-content: space-between;
- align-items: center;
- position: fixed;
- top: 0;            
- z-index: 1000;
- padding-bottom: 3rem;
-
+height:200%;
 }
 
 
 body {
  font-size: 1.6rem;
  background-image:url(images/texture6.jpg);
- background-position: bottom;
- background-size: 1500px;
+ background-position: top;
+ background-size: 2000px;
  
  }
  
@@ -75,54 +57,160 @@ h4 {
    
 }
 
-.mobile-nav-bar {
+nav {
+   height:60px;
+   background-color: black;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+   top:0;
+   z-index: 15;
+   padding: 1rem 0rem;
+   margin-bottom: 20px;
+}
+
+.links-container {
+   height:100%;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+nav a {
+   height: 100%;
+   padding: 0 20px;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   color: white;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 3rem;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+
+
+
+nav a:hover {
+   background-color: lightskyblue;
+   color: black;
+}
+
+#home-page .home-link {
+   display: none;
+}
+
+#portfolio-page .portfolio-link {
+   display: none;
+}
+
+#about-me-page .about-me-link {
+   display: none;
+
+}
+
+#contact-page .contact-link {
    display:none;
 }
-
-.desktop-nav-bar {
- display: flex;    
- width:100%;
- height:10rem;
- min-height: 9rem;
- margin: auto;
- align-items: center;
- justify-content: space-evenly;
- min-width: none;
- }
-
-.desktop-links {
-   display:flex;
-}
-.link {
- flex:1;
- text-align: center;
+.home-link {
+   margin-left: auto;
 }
 
-.logo img {
- flex:1;
- align-items: center;
- width: 15rem;
- min-width: 0px;
- min-height: 0;
- margin: auto;
- justify-content: center;
+
+
+#sidebar-active {
+   display: none;
 }
 
-.link a {
- text-decoration: none;
- font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
- font-weight:lighter;
- color:white;
- font-size: 3rem;
- padding: 2rem;
- 
- }
-
-.link a:hover {
-color: black;
-font-size: 2.5rem;
-background-color: white
+.open-sidebar-button, .close-sidebar-button {
+   display: none;
 }
+
+#logo {
+   
+   display: none;
+}
+
+#hero {
+   display: block;
+   width: 75rem;
+   height: auto;
+   padding-top: 85px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+
+
+@media(max-width: 450px) {
+
+   .links-container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      position: fixed;
+      top: 0;
+      right: -100%;
+
+      z-index: 10;
+      width: 275px;
+
+      background-color: black;
+      box-shadow: -3px 0 5px rgb(20, 20, 20);
+
+      transition: .75s ease-in-out;
+
+   }
+
+   #logo {
+      display:block;
+      margin-right: auto;
+      padding: 0 10px;
+      background-color: transparent;
+   }
+   nav a {
+      box-sizing: border-box;
+      height: auto;
+      width: 100%;
+      padding:40px 30px;
+      justify-content: flex-start;
+      font-size: 8rem;
+
+   }
+   .open-sidebar-button, .close-sidebar-button {
+      padding: 20px;
+      display: block;
+   }
+
+   #sidebar-active:checked ~ .links-container {
+      right: 0;
+
+   }
+
+   #sidebar-active:checked ~ #overlay {
+      height: 100%;
+      width:100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9;
+   }
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -160,26 +248,27 @@ background-color: white
    display:grid;
    grid-template-rows: 2fr 1fr;
    width: 90rem;
-   height:45rem;
+   height:60rem;
    justify-self: center;
    background-image: url(images/home.jpeg);
-   background-size: 90rem;
+   background-size: 107rem;
    background-repeat: no-repeat;
    background-position: center;
-   border: 8px solid lightskyblue;
+
 
 }
 
 .wedding-text h2{
    grid-row: 1;
    padding-left: 3rem;
+   padding-top: 10rem;
 }
 
 .book-button{
    grid-row: 2;
    justify-self: center;
    text-decoration: none;
-   margin: 4rem;
+   
 }
 
 .book-button a {
@@ -206,6 +295,7 @@ background-color: white
    justify-self: center;
    align-items: center;
    justify-items: center;
+   padding-top: 15rem;
 }
 
 
@@ -276,99 +366,7 @@ background-color: white
 
 
 
-@media (max-width:768px) {
+@media (max-width:430px) {
 
 
-.desktop-nav-bar {
-   display: none;
-   
-}
-header {
- display: flex;
- width:100%;
- position:absolute;
-
-}
-
-.mobile-nav-bar {
- display: flex;
- width:100%;
- justify-content: left;
- align-items:center;
- padding-bottom: 30rem;
- border: 3px solid yellow;
- 
-}
-
-/* 1. Parent container: Must be relative so the dropdown attaches to it */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  width: 60rem;
-}
-
-/* Style the button trigger */
-.drop-btn {
-  background-color: transparent;
-  border: none;
-  color: white;
-  height:auto;
-  font-size: 25rem;
-  padding: 0rem 1rem 1.5rem .5rem;
-  cursor: pointer;
-  border-radius: 4px;
-  width: 30rem;
-  
-}
-
-/* 2. Hidden menu: Positioned absolutely right below the trigger */
-.dropdown-content {
-  display: none;       /* Hidden by default */
-  position: absolute;  /* Floats independently of surrounding text */
-  top: 0%;           /* Positions it exactly below the button */
-  left: 105%;
-  background-color: #ffffff;
-  min-width: 160px;         /* Ensures it stays on top of other content */
-  border-radius: 4px;
-  width: 60rem;
-}
-
-/* Style individual links inside the menu */
-.dropdown-content a {
-  color: #333333;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block; 
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 10rem;
-}
-
-/* --- THE MECHANICS --- */
-
-/* 3. Reveal the menu when hovering over the parent container */
-.dropdown:active .dropdown-content {
-  display: block;
-}
-
-/* Add a visual cue when hovering over items */
-.drop-btn:active {
-  background-color: #2980b9;
-}
-
-.dropdown-content a:active {
-  background-color: #f1f1f1;
-}
-.small-logo {
-   max-width: 70rem;
-   padding-right: 3rem;
-}
-
-.grid-container {
-   display:grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 30rem 45rem 45rem;
-   gap:3rem;
-   margin: 0;
-   padding-top:40rem;
-}
 }

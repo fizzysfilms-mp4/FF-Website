@@ -59,7 +59,7 @@ h4 {
    
 }
 
-nav {
+.main-nav {
    height:60px;
    background-color: black;
    display: flex;
@@ -82,7 +82,7 @@ nav {
    align-items: center;
 }
 
-nav a {
+.main-nav a {
    height: 100%;
    padding: 0 20px;
    display:flex;
@@ -359,15 +359,13 @@ nav a:hover {
 .portfolio-title {
    flex:1;
    display: flex;
+   flex-direction: column;
    filter: brightness(0) invert(1);
-   
-   
+   padding-top: 10rem;
    
 }
 
 .portfolio-title #portfolio-png {
-   display: flex;
-   flex-direction: column;
    width:100%;
    height:100%;
    object-fit: cover;
@@ -375,16 +373,23 @@ nav a:hover {
 }
 
 .videos {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
 
 }
 
-.wedding {
+.wedding-1, .wedding-2 {
+   width: 500px;
+   height: auto;
+}
+
+.wedding-3 {
    width: 800px;
    height: auto;
    justify-self: center;
 }
-
-
 
 @media (max-width:430px) {
 .portfolio-title {

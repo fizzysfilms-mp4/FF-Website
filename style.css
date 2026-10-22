@@ -134,19 +134,33 @@ nav a:hover {
 }
 
 #logo {
-   
    display: none;
 }
 
-#hero {
-   display: block;
-   width: 75rem;
-   height: auto;
-   padding-top: 85px;
-   margin-left: auto;
-   margin-right: auto;
+.hero {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   
+
+
 }
 
+#hero-image {
+   
+   width: 50rem;
+   height: 40rem;
+   padding-top: 100px;
+   
+}
+#hero-video {
+   
+   width:25rem;
+   height:auto;
+   padding-top: 100px;
+   
+
+}
 
 
 
@@ -203,7 +217,18 @@ nav a:hover {
       left: 0;
       z-index: 9;
    }
-
+   .item-2 {
+   flex:1;
+   display:block;
+   width: 80rem;
+   height:auto;
+   justify-self: center;
+   margin-left:auto;
+   margin-right:auto;
+}
+#hero-video {
+   display:none;
+}
 }
 
 
@@ -250,13 +275,9 @@ nav a:hover {
    
 
 .item-2 {
-   flex:1;
-   display:block;
-   width: 80rem;
-   height:auto;
-   justify-self: center;
-   margin-left:auto;
-   margin-right:auto;
+   
+   display:none;
+   
 }
 
 
@@ -323,60 +344,22 @@ nav a:hover {
 
 .film-page {
    display:grid;
-   grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: auto auto auto auto auto;
-   padding-top: 30rem;
    gap:0;
-}
-
-
-.film-page-nav {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: auto auto;
-   grid-area: 1/1/2/4;
-   padding: 0;
-   border:6px solid red;
-}
-
-.film-page-title h1 {
-   grid-area: 1/1/2/4;
-   margin:0;
-   justify-self: center;
-   
-}
-
-
-.film-links {
-   display: flex;
-   flex-direction: row;
-   grid-area:2/1/3/2;
-   
-   
-}
-
-.film-links a {
-
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 4rem;
-   text-decoration: none;
-}
-.link-1 {
-   flex:1;
-   background-color:white;
-   justify-content: center;
-   
-}
-.link-2 {
-   flex:1;
-   background-color:orange;
-}
-.link-3 {
-   flex:1;
-   background-color:red;
-   justify-content: center;
+   padding-top: 100px;
   
 }
+
+.portfolio-page-title {
+   color: white;
+   margin-left: auto;
+   margin-right: auto;
+   justify-items: center;
+}
+
+
+
+
 
 
 

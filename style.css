@@ -17,7 +17,7 @@ html, body {
 margin:0;
 padding: 0;
 width:100%;
-height:200%;
+height:auto;
 }
 
 
@@ -70,7 +70,8 @@ nav {
    top:0;
    z-index: 15;
    padding: 1rem 0rem;
-   margin-bottom: 20px;
+   margin: 0;
+
 }
 
 .links-container {
@@ -149,15 +150,15 @@ nav a:hover {
 #hero-image {
    
    width: 50rem;
-   height: 40rem;
-   padding-top: 100px;
+   height: 30rem;
+   padding-top: 150px;
    
 }
 #hero-video {
    
-   width:25rem;
+   width:20rem;
    height:auto;
-   padding-top: 100px;
+   padding-top: 125px;
    
 
 }
@@ -226,8 +227,17 @@ nav a:hover {
    margin-left:auto;
    margin-right:auto;
 }
+
+
 #hero-video {
    display:none;
+}
+#hero-image {
+   
+   width: 80rem;
+   height: auto;
+   padding-top: 100px;
+   
 }
 }
 
@@ -340,26 +350,23 @@ nav a:hover {
 
 
 
-/*FILM PAGE*/
+/*PORTFOLIO PAGE*/
 
-.film-page {
-   display:grid;
-   grid-template-rows: auto auto auto auto auto;
-   gap:0;
-   padding-top: 100px;
-  
+
+.portfolio-title {
+   display: flex;
+   justify-content: center;
 }
 
-.portfolio-page-title {
-   color: white;
-   margin-left: auto;
-   margin-right: auto;
-   justify-items: center;
+.portfolio-title #portfolio-png {
+   display: block;
+   width: 75rem;
+   height:auto;
+   position:relative;
+   padding-top:-5rem;
+   
+
 }
-
-
-
-
 
 
 
@@ -369,5 +376,8 @@ nav a:hover {
 
 @media (max-width:430px) {
 
+.portfolio-title #portfolio-png {
+   padding-top: 25px;
+}
 
 }

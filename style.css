@@ -390,13 +390,24 @@ nav a:hover {
    align-items: center;
    text-decoration: none;
    color: white;
-   background-color: black;
+
+   background-image: linear-gradient(to right, blue, lightskyblue, blue);
+   background-size: 400%;
+   background-position:left;
+   animation: portfolio-animation 8s infinite alternate;
+
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    font-size: 4rem;
    width: 80rem;
    margin:2rem;
 
    justify-content: center;
+}
+@keyframes portfolio-animation {
+   0% {background-position: left;}
+   100% {background-position: right;}
+
+
 }
 
 .portfolio-nav a:hover {

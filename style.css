@@ -415,7 +415,7 @@ nav a:hover {
    color: black;
 }
 
-.video-container {
+.video-container-1 {
    min-height: 400px;
    display:flex;
    flex-direction: row;
@@ -438,7 +438,28 @@ nav a:hover {
    width: 400px;
    overflow: hidden;
 }
+.video-container-2 {
+   min-height: 400px;
+   display:flex;
+   flex-direction: row;
+   gap:10px;
+   flex-wrap: wrap;
+   justify-content:space-evenly;
+   align-items:center;
+   margin: 0;
 
+}
+.video-2 {
+width: 300px;
+max-width: 100%;
+aspect-ratio: 9/16;
+}
+
+.video-2 iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (max-width:430px) {
 .portfolio-title {
    
@@ -458,7 +479,8 @@ nav a:hover {
 }
 .portfolio-nav {
    padding-top: 1rem;
-   padding-bottom: 15rem;
+   padding-bottom: 30rem;
+   margin-bottom: 20rem;
 }
 
 .portfolio-links {

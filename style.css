@@ -385,7 +385,7 @@ nav a:hover {
 }
 
 .portfolio-nav a {
-   height: 100%;
+   height: 8rem;
    display:flex;
    align-items: center;
    text-decoration: none;
@@ -483,3 +483,41 @@ nav a:hover {
 
 }
 
+
+
+
+
+/*CONTACT PAGE*/
+#contact-png {
+   width:100%;
+   height:100%;
+   object-fit: cover;
+   justify-self: center;
+   padding-top: 100px;
+}
+
+
+
+
+
+/*WEDDINGS PAGE */
+#weddings-png {
+  width:100%;
+   height:100%;
+   object-fit: cover;
+   justify-self: center;
+   padding-top: 100px;
+
+}
+
+
+/*ABOUT ME PAGE */
+
+#about-me-png {
+   width:100%;
+   height:100%;
+   object-fit: cover;
+   justify-self: center;
+   padding-top: 100px;
+
+}

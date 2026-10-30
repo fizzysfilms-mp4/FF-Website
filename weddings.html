@@ -6,6 +6,7 @@
    <title>Fizzy's Films</title>
    <link rel="icon" type="image/x-icon" href="images/favicon-better.png">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -33,6 +34,39 @@
   </nav>
  <main>
    <img id="weddings-png" src="Titles/weddings-title-white.png" alt="the word weddings in white">
+   <h3>Video Packages</h3>
+      <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">HIGHLIGHTS - $800
+            <i class="fa fa-caret-down"></i>
+          </button>
+      <div class="dropdown-content" id="myDropdown">
+        <ul>
+          <li>6 hours of coverage</li>
+          <li>2 social media reels</li>
+          <li>4-6 minute video including vows and speeches</li>
+        </ul>
+          
+      </div>
+      </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+   </div>
    
 </main>
 

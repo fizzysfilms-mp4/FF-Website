@@ -150,11 +150,25 @@ nav a:hover {
    flex-direction: row;
    justify-content: space-evenly;
 }
+.hero h3, .hero h4{
+   display:none;
+}
+
+.intro-text {
+   justify-items: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding: 2rem;
+   border: 3px solid white;
+}
+
 
 #hero-image {
    width: 50rem;
    height: 30rem;
    padding-top: 150px;
+  
 
 }
 
@@ -163,9 +177,12 @@ nav a:hover {
    width:20rem;
    height:auto;
    padding-top: 125px;
+   
 }
 
-
+.intro-text-mobile  {
+   display:none;
+}
 
 @media(max-width: 450px) {
    main {
@@ -243,6 +260,13 @@ nav a:hover {
    justify-content: center;
    width:100%;
 }
+.hero h3, h4{
+   display:flex;
+}
+
+.intro-text {
+   display:none;
+}
 
 #hero-image {
    width: 80rem;
@@ -250,7 +274,7 @@ nav a:hover {
    justify-self: center;
    align-self: center;
    padding-bottom: 1rem;
-   padding-top: 23rem;
+   padding-top: 20rem;
    
 }
 #hero-video {
@@ -444,7 +468,7 @@ nav a:hover {
 }
 
 #social-media-title {
-   width:200px;
+   width:400px;
    height:auto;
    
    padding-top: 90px;

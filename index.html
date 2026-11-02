@@ -24,11 +24,21 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
       </label>
       <a class="home-link" href="index.html">HOME</a>
-      <a class="portfolio-link" href="portfolio.html">PORTFOLIO</a>
+      <a class="portfolio-link" href="#portfolio-png">PORTFOLIO</a>
       <a class="wedding-link" href="weddings.html">WEDDINGS</a>
       <a class="about-me-link" href="about-me.html">ABOUT ME</a>
       <a class="contact-link" href="contact.html">CONTACT</a>
+      <script>
+          const sidebarActive = document.getElementById('sidebar-active');
+          const navLinks = document.querySelectorAll('.main-nav a');
+          navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    sidebarActive.checked = false; // Unchecks the box, hiding the drawer via CSS
+  });
+});
+      </script>
     </div>
+    
   </nav>
 
 
@@ -43,7 +53,40 @@
         <h3>creative videography service</h3>
         <h4>GRAND RAPIDS, MI</h4>
    </div>
+   <div class="portfolio-intro">
+   <img id="portfolio-png" src="Titles/white-portfolio.png">
+      <nav class="portfolio-nav">
+          <div class="portfolio-links">
+            <a class="weddingvids-link" href="#wed-videos-title">WEDDINGS</a>
+            <a class="socialvids-link" href="#social-media-title">SOCIAL MEDIA</a>
+            <a class="othervids-link" href="#other-title">OTHER</a>
+          </div>
+      </nav>
+   </div>
+      <div class="title"><img id="wed-videos-title"src="Titles/weddings-title-white.png"></div>
+  
+      <div class="video-container-1" id="wedding-videos">
+        <div class="video"><iframe src="https://player.vimeo.com/video/1231482934?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1&amp;loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Savannah and Nathan - Full Film - With Subtitles"></iframe></div>
+        <div class="video"><iframe title="vimeo-player" src="https://player.vimeo.com/video/1231447301?h=eb34ee5ab0" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe></div>
+      </div>
 
+      <div class="button"><a href="weddings.html">info/pricing</a></div>
+
+      <div class="title"><img id="social-media-title" src="Titles/social-media-title-white.png"></div>
+
+      <div class="video-container-2" id="social-media-videos">
+        <div class="video-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/1189544292?h=6ea8d2c6c1" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe></div>
+        <div class="video-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/1189853095?h=8758367a9c" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe></div>
+        <div class="video-2"><iframe title="vimeo-player" src="https://player.vimeo.com/video/1179903342?h=174a072622" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe></div>
+      </div>
+
+      <div class="title"><img id="other-title" src="Titles/other-title-white.png"></div>
+
+      <div class="video-container-1" id="social-media-videos">
+        <div class="video-3"><iframe title="vimeo-player" src="https://player.vimeo.com/video/1179913919?h=227681950c" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe></div>
+        <div class="video-3"><iframe title="vimeo-player" src="https://player.vimeo.com/video/1179903966?h=c51fb49cbb" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe></div>
+      </div>
+  
 </main>
 
 

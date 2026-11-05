@@ -354,7 +354,7 @@ nav a:hover {
    background-size: 400%;
    background-position:left;
    animation: portfolio-animation 8s infinite alternate;
-   box-shadow: 3px 2px 5px rgb(20, 20, 20);
+  
 
    font-family: "trade-gothic-next-compressed", sans-serif;
    font-weight: 800;
@@ -362,6 +362,7 @@ nav a:hover {
    font-size: 5rem;
    width: 80rem;
    margin:2rem;
+   border-radius: 2px;
 
    justify-content: center;
 }
@@ -560,6 +561,15 @@ aspect-ratio: 9/16;
    gap:40px;
 }
 
+.packages {
+   display:flex;
+
+}
+.packages img {
+   width:80rem;
+   height:auto;
+}
+
 }
 
 
@@ -588,65 +598,9 @@ aspect-ratio: 9/16;
    padding-top: 100px;
 
 }
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  justify-content: center;
-  background-color: rgb(234, 223, 121);
-  margin-top: 10rem;
-  margin-left: 5rem;
-  
-  
-}
-
-.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 28px;  
-  border: none;
-  outline: none;
-  color: rgb(9, 9, 63);
-  
-  font-family: "trade-gothic-next-compressed", sans-serif;
-   font-weight: 800;
-   font-style: normal;
-  margin: 0;
-  padding: 8rem 6.5rem;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: rgb(234, 223, 121);
-  
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  width:82.2rem;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  padding-left: 3rem;
-}
-
-.dropdown-content li {
-   font-size: 22px;
-   font-family: "trade-gothic-next-compressed", sans-serif;;
-  float: none;
-  color: black;
-  padding: 12px 12px;
-  display: list-item;
-  text-align: left;
-  margin-left: 4rem;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
+.packages {
+   display:flex;
+   flex-direction: column;
 }
 
 

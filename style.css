@@ -685,7 +685,7 @@ main {
 }
 .accordion-header {
    background-color:rgb(65, 127, 241);
-   padding: 30px;
+   padding: 20px;
    cursor:pointer;
    
    
@@ -702,7 +702,9 @@ main {
    font-size: 6rem;
    max-height:0;
    transition: max-height 0.6s ease;
-   padding:40px;
+   padding-left:30px;
+   padding-bottom: 20px;
+   padding-top: 20px;
    overflow: hidden;
    background-color: #000000;
    color: white;

@@ -637,10 +637,10 @@ main {
    
 }
 .accordion-content {
-   display:none;
+   display:list-item;
    font-family: "oswald", sans-serif;
    font-size: 2rem;
-   max-height:0;
+   max-height:1000;
    transition: max-height 0.6s ease;
    padding:40px;
    overflow: hidden;
@@ -649,10 +649,7 @@ main {
    
 }
 
-.accordion-content.active {
-   display:list-item;
-   max-height:1000px;
-}
+
 
 @media (max-width:430px) {
 

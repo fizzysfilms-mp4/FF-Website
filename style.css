@@ -672,6 +672,8 @@ main {
       width: 90rem;
       margin-top: 30px;
       justify-content: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
    }
 
 .accordion-item {
@@ -691,10 +693,10 @@ main {
    
 }
 .accordion-content {
-   display:none;
+   display:list-item;
    font-family: "oswald", sans-serif;
    font-size: 6rem;
-   max-height:0;
+   max-height:1000px;
    transition: max-height 0.6s ease;
    padding-left:30px;
    padding-bottom: 20px;
@@ -705,10 +707,7 @@ main {
    
 }
 
-.accordion-content.active {
-   display:list-item;
-   max-height:1000px;
-}
+
 
 }
 

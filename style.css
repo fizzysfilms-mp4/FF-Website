@@ -4,17 +4,7 @@
    padding:0;
 }
 
-.oleo-script-regular {
-  font-family: "Oleo Script", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.oleo-script-bold {
-  font-family: "Oleo Script", system-ui;
-  font-weight: 700;
-  font-style: normal;
-}
 .oswald-regular {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -35,36 +25,19 @@ background-color: transparent;
 html, body {
 margin:0;
 padding: 0;
-width:100%;
-height:auto;
+max-width: 100%;
 }
 
 
 body {
- font-size: 1.6rem;
  background-image:url(images/texture6.jpg);
  background-color: rgb(113, 113, 113);
  background-attachment: fixed;
  background-position: left;
- background-size: 2500px;
+ background-size: 2400px;
  justify-content: center;
- 
- }
- 
-
-h1{
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 15rem;
-   color: white;
-   text-shadow: 6px 6px 6px black;
-   
 }
-
-h2 {
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 9rem;
-   color: white;
-}
+ 
 
 h3 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -84,8 +57,262 @@ h4 {
    font-size: 6rem;
 
 }
+main {
+   justify-items: center;
+}
+.main-nav {
+   margin-bottom: 10rem;
+   width: 100%;
+   box-sizing: border-box;
+}
+.links-container {
+   flex-direction: column;
+   align-items: flex-start;
+   position: fixed;
+   top: 0;
+   right: -100%;
+   z-index: 10;
+   width: 75%;
+   background-color: black;
+   box-shadow: -3px 0 5px rgb(20, 20, 20);
+   transition: .75s ease-in-out;
+}
+#logo {
+   display:block;
+   margin-right: auto;
+   padding: 0 10px;
+   background-color: transparent;
+}
+.main-nav a {
+   box-sizing: border-box;
+   height: auto;
+   width: 100%;
+   padding:40px 30px;
+   justify-content: flex-start;
+   font-size: 8rem;
+}
+.open-sidebar-button, .close-sidebar-button {
+   padding: 20px;
+   display: block;
+   box-sizing: border-box;
+}
+#sidebar-active:checked ~ .links-container {
+   right: 0;
+
+}
+#sidebar-active:checked ~ #overlay {
+   height: 100%;
+   width:100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 9;
+}
+.hero {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width:100%;
+}
+.hero h3, .hero h4{
+   display:flex;
+}
+.intro-text {
+   display:none;
+}
+#hero-image {
+   width: 80rem;
+   height: auto;
+   justify-self: center;
+   align-self: center;
+   padding-bottom: 1rem;
+   padding-top: 20rem;
+   margin-right:0;
+}
+#hero-video {
+ display:flex;
+ justify-self: center;
+ width: 250px;
+ min-width: none;
+ max-width: 100%;
+ aspect-ratio: 9/16;
+ padding-top: 20px;
+
+}
+.portfolio-links {
+   height:100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px; 
+}
+.portfolio-nav {
+   display: flex;
+   padding-top: 10rem;
+   padding-bottom: 80rem;
+   margin-bottom: 60rem;
+}
+.portfolio-nav a {
+   padding: 50px 30px;
+   font-size: 10rem;
+   width: 75rem;
+}
+.portfolio-nav a:hover {
+   background-color: white;
+   color: black;
+}
+#wed-videos-title {
+   width:100%;
+   height:auto;
+   padding-top: 75px;
+   padding-bottom: 15px;
+}
+.title {
+   display:flex;
+   align-content: center;
+   justify-content: center;
+}
+#social-media-title {
+   width:75%;
+   height:75%;
+   padding-top: 90px;
+   padding-bottom: 30px;
+}
+#other-title {
+   width:70%;
+   height:70%;
+   padding-top: 20rem;
+   padding-bottom: 1rem;
+}
+.video-container-1 {
+   gap:5px;
    
 }
+.video {
+   height:auto;
+   padding: 0;
+   width: 350px;
+   height:275px;
+}
+.button {
+   display: flex;
+   width:100%;
+   justify-content: center;
+   padding-top: 8rem;
+
+}
+.button a {
+   font-family: "trade-gothic-next-compressed", sans-serif;
+   font-weight: 800;
+   font-style: normal;
+   font-size: 30px;
+   text-decoration: none;
+   color:rgb(251, 251, 251);
+   background-image: linear-gradient(to right, rgb(0, 26, 143),rgb(0, 162, 255),rgb(0, 26, 143));
+   background-size: 400%;
+   background-position:left;
+   animation: portfolio-animation 8s infinite alternate;
+   box-shadow: 3px 2px 5px rgb(20, 20, 20);
+   padding: 4rem 12rem;
+   border-radius: 2px;
+   text-align: center;
+}
+.video-container-2 {
+   gap:40px;
+}
+.weddings-main {
+   align-items: center;
+   justify-content: center;
+}
+#weddings-png {
+   width:90%;
+   height:auto;
+   padding-top: 100px;
+}
+.packages {
+   display:flex;
+   flex-direction: column;
+   width: 85rem;
+   margin-top: 30px;
+   align-items: center;
+}
+.highlights, .standard, .premium {
+   flex:1;
+   margin-bottom: 30px;
+   width: 85rem;
+}
+.h-header {
+   background-color:rgb(65, 127, 241);
+   padding: 20px;
+}
+.h-header h2 {
+   justify-self: center;
+   font-size: 8rem;
+   color:white;
+}
+.h-content {
+   display:list-item;
+   font-family: "oswald", sans-serif;
+   font-size: 6rem;
+   max-height:1000px;
+   transition: max-height 0.6s ease;
+   padding-left:30px;
+   padding-bottom: 20px;
+   padding-top: 20px;
+   overflow: hidden;
+   background-color: rgb(150, 186, 252);
+   color: black;
+}
+.s-header {
+   background-color:rgb(219, 111, 249);
+   padding: 20px;
+}
+
+.s-header h2 {
+   justify-self: center;
+   font-size: 8rem;
+}
+.s-content {
+   display:list-item;
+   font-family: "oswald", sans-serif;
+   font-size: 6rem;
+   max-height:1000px;
+   transition: max-height 0.6s ease;
+   padding-left:30px;
+   padding-bottom: 20px;
+   padding-top: 20px;
+   overflow: hidden;
+   background-color: rgb(225, 169, 241);
+   color: black;
+}
+.p-header {
+   background-color:rgb(241, 165, 65);
+   padding: 20px;
+   cursor:pointer;
+}
+.p-header h2 {
+   justify-self: center;
+   font-size: 8rem;
+}
+.p-content {
+   display:list-item;
+   font-family: "oswald", sans-serif;
+   font-size: 6rem;
+   max-height:1000px;
+   transition: max-height 0.6s ease;
+   padding-left:30px;
+   padding-bottom: 20px;
+   padding-top: 20px;
+   overflow: hidden;
+   background-color: #000000;
+   color: white;
+}
+
+}
+
+
 .main-nav {
    height:60px;
    background-color: black;
@@ -177,136 +404,28 @@ nav a:hover {
 .hero h3, .hero h4{
    display:none;
 }
-
 .intro-text {
    justify-items: center;
    align-items: center;
    display: flex;
    flex-direction: column;
    padding: 2rem;
-   
 }
-
-
 #hero-image {
    width: 50rem;
    height: 30rem;
    padding-top: 150px;
    margin-right:8rem;
-
 }
-
-
 #hero-video {
    width:20rem;
    height:auto;
    padding-top: 125px;
-   
 }
-
 .intro-text-mobile  {
    display:none;
 }
 
-@media(max-width: 450px) {
-   main {
-   justify-items: center;
-
-}
-.main-nav {
-   margin-bottom: 10rem;
-   width: 100%;
-
-   box-sizing: border-box;
-}
-   .links-container {
-      flex-direction: column;
-      align-items: flex-start;
-      position: fixed;
-      top: 0;
-      right: -100%;
-      z-index: 10;
-      width: 75%;
-      background-color: black;
-      box-shadow: -3px 0 5px rgb(20, 20, 20);
-      transition: .75s ease-in-out;
-
-   }
-
-   #logo {
-      display:block;
-      margin-right: auto;
-      padding: 0 10px;
-      background-color: transparent;
-   }
-   .main-nav a {
-      box-sizing: border-box;
-      height: auto;
-      width: 100%;
-      padding:40px 30px;
-      justify-content: flex-start;
-      font-size: 8rem;
-
-   }
-   .open-sidebar-button, .close-sidebar-button {
-      padding: 20px;
-      display: block;
-      box-sizing: border-box;
-   }
-
-   #sidebar-active:checked ~ .links-container {
-      right: 0;
-
-   }
-
-   #sidebar-active:checked ~ #overlay {
-      height: 100%;
-      width:100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9;
-   }
-  
-
-.hero {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   width:100%;
-}
-.hero h3, .hero h4{
-   display:flex;
-}
-
-.intro-text {
-   display:none;
-}
-
-#hero-image {
-   width: 80rem;
-   height: auto;
-   justify-self: center;
-   align-self: center;
-   padding-bottom: 1rem;
-   padding-top: 20rem;
-   margin-right:0;
-   
-}
-#hero-video {
- display:flex;
- justify-self: center;
- width: 250px;
- min-width: none;
- max-width: 100%;
- aspect-ratio: 9/16;
- padding-top: 20px;
- 
- 
-}
-
-}
 
 .about-me-container {
    gap:10px;
@@ -481,112 +600,6 @@ aspect-ratio: 9/16;
    overflow: hidden;
 }
 
-@media (max-width:430px) {
-
-.portfolio-links {
-   height:100%;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 40px;
-   
-}
-.portfolio-nav {
-   display: flex;
-   padding-top: 10rem;
-   padding-bottom: 80rem;
-   margin-bottom: 60rem;
-}
-
-
-
-.portfolio-nav a {
-   padding: 50px 30px;
-   font-size: 10rem;
-   width: 75rem;
-}
-.portfolio-nav a:hover {
-   background-color: white;
-   color: black;
-}
-
-
-#wed-videos-title {
-   width:100%;
-   height:auto;
-   padding-top: 75px;
-   padding-bottom: 15px;
-}
-
-.title {
-   display:flex;
-   align-content: center;
-   justify-content: center;
-}
-#social-media-title {
-   width:75%;
-   height:75%;
-   padding-top: 90px;
-   padding-bottom: 30px;
-}
-#other-title {
-   width:70%;
-   height:70%;
-   padding-top: 20rem;
-   padding-bottom: 1rem;
-}
-.video-container-1 {
-   gap:5px;
-   
-}
-
-.video {
-   height:auto;
-   padding: 0;
-   width: 350px;
-   height:275px;
-}
-
-.button {
-   display: flex;
-   width:100%;
-   justify-content: center;
-   padding-top: 8rem;
-
-}
-
-.button a {
-   font-family: "trade-gothic-next-compressed", sans-serif;
-   font-weight: 800;
-   font-style: normal;
-   font-size: 30px;
-
-   text-decoration: none;
-   color:rgb(251, 251, 251);
-   background-image: linear-gradient(to right, rgb(0, 26, 143),rgb(0, 162, 255),rgb(0, 26, 143));
-   background-size: 400%;
-   background-position:left;
-   animation: portfolio-animation 8s infinite alternate;
-   box-shadow: 3px 2px 5px rgb(20, 20, 20);
-
-   padding: 4rem 12rem;
-   border-radius: 2px;
-   text-align: center;
-
-
-}
-
-.video-container-2 {
-   gap:40px;
-}
-
-}
-
-
-
-
-
 /*CONTACT PAGE*/
 #contact-png {
    width:100%;
@@ -612,55 +625,10 @@ main {
    justify-self: center;
    padding-top: 100px;
 }
-  .accordion {
-      display:flex;
-      flex-direction: row;
-      margin-top: 30px;
-      justify-content: center;
-   }
-
-.accordion-item {
-   margin-bottom: 20px;
-   margin-left: 1rem;
-   margin-right: 1rem;
-}
-.accordion-header {
-   background-color:rgb(65, 127, 241);
-   padding: 30px;
-   cursor:pointer;
-}
-
-.accordion-header h2 {
-   justify-self: center;
-   font-size: 3rem;
-   
-}
-.accordion-content {
-   display:list-item;
-   font-family: "oswald", sans-serif;
-   font-size: 2rem;
-   max-height:1000;
-   transition: max-height 0.6s ease;
-   padding:40px;
-   overflow: hidden;
-   background-color: #000000;
-   color: white;
-   
-}
-
-
-
-@media (max-width:430px) {
 .weddings-main {
    align-items: center;
    justify-content: center;
 }
-#weddings-png {
-   width:90%;
-   height:auto;
-   padding-top: 100px;
-}
-
 .packages {
    display:flex;
    flex-direction: column;
@@ -691,7 +659,7 @@ main {
    font-size: 6rem;
    max-height:1000px;
    transition: max-height 0.6s ease;
-   padding-left:30px;
+   padding-left:7rem;
    padding-bottom: 20px;
    padding-top: 20px;
    overflow: hidden;
@@ -715,7 +683,7 @@ main {
    font-size: 6rem;
    max-height:1000px;
    transition: max-height 0.6s ease;
-   padding-left:30px;
+   padding-left:7rem;
    padding-bottom: 20px;
    padding-top: 20px;
    overflow: hidden;
@@ -734,15 +702,13 @@ main {
 }
 
 
-
-
 .p-content {
    display:list-item;
    font-family: "oswald", sans-serif;
    font-size: 6rem;
    max-height:1000px;
    transition: max-height 0.6s ease;
-   padding-left:30px;
+   padding-left:7rem;
    padding-bottom: 20px;
    padding-top: 20px;
    overflow: hidden;
@@ -750,10 +716,6 @@ main {
    color: white;
 }
 
-
-
-
-}
 
 
 /*ABOUT ME PAGE */

@@ -21,7 +21,7 @@ html, body {
 max-width: 100%;
 }
 body {
- background-color: rgb(0, 45, 80);
+ background-color: #000000;
 }
 main {
   display: flex;
@@ -98,7 +98,7 @@ nav a:hover {
    flex-direction: row;
    justify-content: space-evenly;
 }
-.hero h3, .hero h4{
+.hero h4{
    display:none;
 }
 .intro-text {
@@ -110,8 +110,8 @@ nav a:hover {
    padding-top: 150px;
    margin-right:8rem;
 }
-#hero-video {
-   width:20rem;
+.hero #hero-video {
+   width:100%;
    height:auto;
    padding-top: 125px;
 }
@@ -181,7 +181,7 @@ nav a:hover {
 }
 .portfolio-intro {
    padding-bottom: 10rem;
-   margin-top: 5rem;
+   margin-top: 23rem;
    padding-top: 1rem;
    width:100%;
    background-image: linear-gradient(rgb(0, 45, 80),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0));
@@ -473,11 +473,15 @@ main {
    justify-content: center;
    width:100%;
 }
-.hero h3, .hero h4{
+.hero h4{
    display:flex;
+   z-index: 2;
+   margin-top: -40rem;
 }
+
 .intro-text {
    display:none;
+   z-index: 2;
 }
 #hero-image {
    width: 80rem;
@@ -487,15 +491,18 @@ main {
    padding-bottom: 1rem;
    padding-top: 20rem;
    margin-right:0; 
+   z-index: 2;
 }
 #hero-video {
- display:flex;
  justify-self: center;
  width: 250px;
  min-width: none;
  max-width: 100%;
  aspect-ratio: 9/16;
- padding-top: 20px;
+ margin-top: -82rem;
+ z-index: 1;
+ position: relative;
+
 }
 
 #closeup {

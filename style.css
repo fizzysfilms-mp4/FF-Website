@@ -16,6 +16,7 @@
 }
 html {
  font-size: 1vw;
+ scroll-behavior: smooth;
 }
 html, body {
 max-width: 100%;
@@ -193,8 +194,10 @@ nav a:hover {
    object-fit: cover;
    padding-top: 90px;
    gap:0;
-   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
 }
+
 .portfolio-nav {
    display:flex;
    height:60px;
@@ -503,6 +506,25 @@ main {
    margin-left:6rem;
    margin-top:-10rem;
 }
+.container {
+   margin-top: 160px;
+   scroll-margin-top: 80px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   gap:10rem;
+   
+}
+.sliding-background img {
+   width:100rem;
+   height: 100%;
+   animation: spin 7s linear infinite;
+}
+
+@keyframes spin {
+   from {translate:0;}
+   to {translate:-110%;}
+}
 .portfolio-links {
    height:100%;
    width: 100%;
@@ -527,10 +549,10 @@ main {
    color: black;
 }
 #wed-videos-title {
-   width:100%;
+   width:60%;
    height:auto;
-   padding-top: 75px;
-   padding-bottom: 15px;
+   padding-bottom: 10rem;
+   margin-top: 10rem;
 }
 .title {
    display:flex;
@@ -587,7 +609,8 @@ main {
 }
 
 #weddings-png {
-   width:90%;
+   display: block;
+   width:70%;
    height:auto;
    padding-top: 100px;
 }

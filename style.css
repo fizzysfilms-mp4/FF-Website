@@ -240,8 +240,12 @@ nav a:hover {
    color: black;
 }
 .videos {
+   display: flex;
+   flex-direction: column;
    background-image: linear-gradient(black, rgb(0, 45, 80),rgb(0, 45, 80),rgb(0, 45, 80),black);
    padding-bottom: 20rem;
+   align-items: center;
+   justify-content: center;
 }
 #wed-videos-title {
    flex:1;
@@ -507,7 +511,7 @@ main {
    margin-top:-10rem;
 }
 .container {
-   margin-top: 160px;
+   margin-top: 10px;
    scroll-margin-top: 80px;
    overflow: hidden;
    display: flex;
@@ -549,7 +553,7 @@ main {
    color: black;
 }
 #wed-videos-title {
-   width:60%;
+   width:80%;
    height:auto;
    padding-bottom: 10rem;
    margin-top: 10rem;
@@ -565,11 +569,14 @@ main {
    padding-top: 90px;
    padding-bottom: 30px;
 }
-#other-title {
-   width:70%;
-   height:70%;
+.other-title #other-title{
+   display: block;
+   width:80%;
+   height:80%;
    padding-top: 20rem;
    padding-bottom: 1rem;
+   margin-left: auto;
+   margin-right: auto;
 }
 .video-container-1 {
    gap:5px;
